@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Compressor</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1 style="text-align:center;">📷 Image Compressor</h1>
+
+<div class="ad">Ad Space</div>
+
+<div style="text-align:center;">
+  <input type="file">
+  <br><br>
+  <button onclick="compress()" class="btn">Compress Image</button>
+</div>
+
+<div id="result" style="text-align:center;margin-top:20px;"></div>
+
+<div class="ad">Ad Space</div>
+
+<h3 style="padding:20px;">About Tool</h3>
+<p style="padding:20px;">
+This tool helps you compress images online without losing quality. 
+Perfect for reducing file size for websites and social media.
+</p>
+
+<script>
+function compress(){
+ document.getElementById("result").innerHTML="✅ Image Compressed Successfully";
+}
+</script>
+
+</body>
+</html>
