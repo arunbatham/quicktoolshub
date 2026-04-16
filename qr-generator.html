@@ -1,53 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>QR Generator</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="https://pl29160600.profitablecpmratenetwork.com/2d/b2/80/2db280dbd3e4c9a4bfb0181cc7f5248d.js"></script>
+  <head>
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://pl29160600.profitablecpmratenetwork.com/2d/b2/80/2db280dbd3e4c9a4bfb0181cc7f5248d.js"></script>
+    <link rel="icon" href="quick_tools_favicon.png" type="image/png" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2 class="logo">⚡ Quick tools hub</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Tools</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <h1>🔗 QR Code Generator</h1>
 
-</head>
-<body>
+    <div class="ad">
+      <script>
+        atOptions = {
+          key: "311c33db7d274e86dd694ba1af23c11e",
+          format: "iframe",
+          height: 90,
+          width: 728,
+          params: {},
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/311c33db7d274e86dd694ba1af23c11e/invoke.js"></script>
+    </div>
 
-<h1>🔗 QR Code Generator</h1>
+    <input type="text" id="text" placeholder="Enter text or URL" />
+    <button onclick="generateQR()">Generate QR</button>
 
-<div class="ad"><script>
-  atOptions = {
-    'key' : '311c33db7d274e86dd694ba1af23c11e',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/311c33db7d274e86dd694ba1af23c11e/invoke.js"></script>
+    <br /><br />
+    <img id="qr" />
 
-</div>
+    <div class="ad">
+      <script>
+        atOptions = {
+          key: "d3e0a6d23feca1ae6e5d6cf2e697ecb7",
+          format: "iframe",
+          height: 50,
+          width: 320,
+          params: {},
+        };
+      </script>
+      <script src="https://www.highperformanceformat.com/d3e0a6d23feca1ae6e5d6cf2e697ecb7/invoke.js"></script>
+    </div>
 
-<input type="text" id="text" placeholder="Enter text or URL">
-<button onclick="generateQR()">Generate QR</button>
+    <script>
+      function generateQR() {
+        let text = document.getElementById("text").value;
+        let qr = document.getElementById("qr");
 
-<br><br>
-<img id="qr">
-
-<div class="ad"><script>
-  atOptions = {
-    'key' : 'd3e0a6d23feca1ae6e5d6cf2e697ecb7',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/d3e0a6d23feca1ae6e5d6cf2e697ecb7/invoke.js"></script></div>
-
-<script>
-function generateQR() {
-  let text = document.getElementById("text").value;
-  let qr = document.getElementById("qr");
-
-  qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(text);
-}
-</script>
-
-</body>
+        qr.src =
+          "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" +
+          encodeURIComponent(text);
+      }
+    </script>
+  </body>
 </html>
