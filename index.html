@@ -3,84 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Online Tools</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Free AI Tools - Quick Tools Hub</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, Arial;
+        background: #0f172a;
+        color: white;
+        text-align: center;
+      }
+
+      /* Container */
+      .container {
+        padding: 20px;
+      }
+
+      /* Heading */
+      h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      /* Buttons */
+      .btn {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 12px auto;
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 12px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        background: #22c55e;
+        color: black;
+      }
+
+      .btn:active {
+        transform: scale(0.98);
+      }
+
+      /* Sticky CTA */
+      .sticky {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #020617;
+        padding: 10px 0px;
+      }
+
+      .sticky button {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        background: #facc15;
+        font-weight: bold;
+      }
+
+      /* Loader */
+      #loader {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #000000dd;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #ccc;
+        border-top: 4px solid #22c55e;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Desktop tweak */
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 32px;
+        }
+        .btn {
+          font-size: 18px;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+
+    <!-- Adsterra Popunder -->
+     <div style="width:300px; height:250px; margin: 0 auto;">
     <script src="https://pl29160600.profitablecpmratenetwork.com/2d/b2/80/2db280dbd3e4c9a4bfb0181cc7f5248d.js"></script>
-    <link rel="icon" href="quick_tools_favicon.png" type="image/png" />
+</div>
   </head>
+
   <body>
     <header class="navbar">
       <h2 class="logo">⚡ Quick tools hub</h2>
-     <nav>
-        <a href="https://quicktoolshub-omega.vercel.app/">Home</a>
-        <a href="https://quicktoolshub-omega.vercel.app/image-compressor.html">Image compressor</a>
-        <a href="https://quicktoolshub-omega.vercel.app/pdf-merge.html">PDF merge</a>
-        <a href="https://quicktoolshub-omega.vercel.app/background-remover.html">Image background remover</a>
-        <a href="https://quicktoolshub-omega.vercel.app/password-generator.html">Password genertor</a>
-        <a href="https://quicktoolshub-omega.vercel.app/qr-generator.html">QR generator</a>
-      </nav>
     </header>
-    <!-- Top Ad -->
-    <div class="ad">
-      <script>
-        atOptions = {
-          key: "311c33db7d274e86dd694ba1af23c11e",
-          format: "iframe",
-          height: 90,
-          width: 728,
-          params: {},
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/311c33db7d274e86dd694ba1af23c11e/invoke.js"></script>
+    <div class="container">
+      <h1>⚡ Free AI Tools</h1>
+      <p>No Signup • Fast • 100% Free</p>
+      <a href="image-compressor.html" onclick="openTool()">
+        <button class="btn">🖼 Compress Image</button>
+      </a>
+      <a href="background-remover.html" onclick="openTool()">
+        <button class="btn">🧼 Remove Background</button></a
+      >
+      <a href="pdf-merge.html" onclick="openTool()">
+        <button class="btn">📄 Merge PDF</button></a
+      >
+
+      <a href="password-generator.html" onclick="openTool()">
+        <button class="btn">🔐 Password Generator</button></a
+      >
+
+      <a href="qr-generator.html" onclick="openTool()">
+        <button class="btn">📱 QR Generator</button></a
+      >
+      <a href="thumbnail-downloader.html" onclick="openTool()">
+        <button class="btn">🎬 Thumbnail Downloader</button></a
+      >
     </div>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>All-in-One Free Online Tools 🚀</h1>
-        <p>Fast, secure & 100% free tools for daily use</p>
-        <a href="#tools" class="btn">Start Now</a>
-      </div>
-    </section>
-    <section id="tools" class="tools">
-      <h2>🔥 Popular Tools</h2>
-      <div class="grid">
-        <a href="image-compressor.html" class="card">📷 Image Compressor</a>
-        <a href="pdf-merge.html" class="card">📄 PDF Merge</a>
-        <a href="background-remover.html" class="card">🧠 Background Remover</a>
-        <a href="qr-generator.html" class="card">🔗 QR Generator</a>
-        <a href="password-generator.html" class="card">🔐 Password Generator</a>
-        <a href="thumbnail-downloader.html" class="card"
-          >🎬 Thumbnail Downloader</a
-        >
-      </div>
-    </section>
-    <!-- Middle Ad -->
-    <div class="ad">
-      <script>
-        atOptions = {
-          key: "d3e0a6d23feca1ae6e5d6cf2e697ecb7",
-          format: "iframe",
-          height: 50,
-          width: 320,
-          params: {},
-        };
-      </script>
-      <script src="https://www.highperformanceformat.com/d3e0a6d23feca1ae6e5d6cf2e697ecb7/invoke.js"></script>
+
+    <!-- Sticky Bottom CTA -->
+    <div class="sticky">
+      <button onclick="openTool()">🚀 Use Tool Now</button>
     </div>
-    <section class="features">
-      <div class="box">⚡ Super Fast</div>
-      <div class="box">💯 Free Forever</div>
-      <div class="box">🔒 Secure Data</div>
-    </section>
-    <section class="cta">
-      <h2>Start Using Tools Now</h2>
-      <a href="#" class="btn">Get Started</a>
-    </section>
-    <footer>
-      <p>© 2026 Quick tools hub | All Rights Reserved</p>
-    </footer>
+
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Processing... Please wait</p>
+    </div>
+
+    <script>
+      function openTool() {
+        document.getElementById("loader").style.display = "flex";
+
+        setTimeout(() => {
+          window.location.href = "index.html"; // apna tool page link daal
+        }, 2000);
+      }
+    </script>
   </body>
 </html>
